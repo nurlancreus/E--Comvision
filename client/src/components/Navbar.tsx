@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useDispatch } from "react-redux";
 import {
   LightModeOutlined,
   DarkModeOutlined,
@@ -7,7 +8,6 @@ import {
   SettingsOutlined,
   ArrowDropDownOutlined,
 } from "@mui/icons-material";
-import { useDispatch } from "react-redux";
 import {
   AppBar,
   Box,

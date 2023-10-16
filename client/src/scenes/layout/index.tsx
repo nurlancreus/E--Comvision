@@ -12,7 +12,6 @@ import { type UserType } from "@/state/types";
 
 export default function Layout() {
   const isNonMobile = useMediaQuery("(min-width: 600px)");
-  // const underMd = useMediaQuery("(max-width: 800px)");
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   const userId = useSelector(selectUserId);
   const { data } = useGetUserQuery(userId);

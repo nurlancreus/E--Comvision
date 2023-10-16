@@ -1,5 +1,4 @@
 import { Box, useTheme } from "@mui/material";
-import { useGetCustomersQuery } from "@/state/api";
 import {
   DataGrid,
   type GridCellParams,
@@ -7,6 +6,8 @@ import {
 } from "@mui/x-data-grid";
 
 import Header from "@/components/Header";
+
+import { useGetCustomersQuery } from "@/state/api";
 import { type UserType } from "@/state/types";
 
 type CustomCellParams = GridCellParams<

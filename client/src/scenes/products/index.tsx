@@ -2,9 +2,9 @@ import { Box, useMediaQuery } from "@mui/material";
 
 import Header from "@/components/Header";
 import Product from "./Product";
+import Spinner from "@/components/Spinner";
 
 import { useGetProductsQuery } from "@/state/api";
-import Spinner from "@/components/Spinner";
 
 export default function Products() {
   const { data, isLoading } = useGetProductsQuery();

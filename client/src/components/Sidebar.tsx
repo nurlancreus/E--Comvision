@@ -31,6 +31,7 @@ import {
   useMediaQuery,
 } from "@mui/material";
 import profileImage from "@/assets/profile.jpeg";
+
 import { FlexBetween } from "./FlexBetween";
 import { type UserType } from "@/state/types";
 

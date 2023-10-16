@@ -10,8 +10,8 @@ body,
 }
 
 :root.dark {
-  --color-track: #141937;
-  --color-track-hover: #191F45;
+  --color-track: #7a7f9d;
+  --color-track-hover: #4d547d;
   --color-thumb: #21295c;
 }
 
