@@ -13,9 +13,9 @@ import { type TotalDataLineType } from "@/state/types";
 export default function Daily() {
   const theme = useTheme();
   const [startDate, setStartDate] = useState<null | Date>(
-    new Date("2021-02-01")
+    new Date("2023-02-01")
   );
-  const [endDate, setEndDate] = useState<null | Date>(new Date("2021-03-01"));
+  const [endDate, setEndDate] = useState<null | Date>(new Date("2023-03-01"));
   const { data, isLoading } = useGetSalesQuery();
 
   const [formattedData] = useMemo(() => {

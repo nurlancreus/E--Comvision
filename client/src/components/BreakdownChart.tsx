@@ -4,7 +4,7 @@ import { Box, CircularProgress, Typography, useTheme } from "@mui/material";
 import { useGetSalesQuery } from "@/state/api";
 
 type BreakdownChartProps = {
-  isDashboard: boolean;
+  isDashboard?: boolean;
 };
 
 export default function BreakdownChart({ isDashboard = false }: BreakdownChartProps) {
