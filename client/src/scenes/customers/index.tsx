@@ -93,7 +93,7 @@ export default function Customers() {
         }}
       >
         <DataGrid
-          loading={isLoading}
+          loading={isLoading || !data}
           getRowId={(row) => row._id}
           rows={data || []}
           columns={columns}

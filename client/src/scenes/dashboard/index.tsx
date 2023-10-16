@@ -70,9 +70,12 @@ export default function Dashboard() {
 
   return (
     <Box m="1.5rem 2.5rem">
-      <FlexBetween flexDirection={isUnder800 ? "column" : "row"} sx={{
-        alignItems: isUnder800 ? "flex-start" : "center"
-      }} >
+      <FlexBetween
+        flexDirection={isUnder800 ? "column" : "row"}
+        sx={{
+          alignItems: isUnder800 ? "flex-start" : "center",
+        }}
+      >
         <Header title="Dashboard" subTitle="Welcome to your dashboard" />
         <Box>
           <Button
@@ -194,7 +197,7 @@ export default function Dashboard() {
           <DataGrid
             loading={isLoading || !data}
             getRowId={(row) => row._id}
-            rows={(data && data.transactions) || []}
+            rows={data?.transactions || []}
             columns={columns}
           />
         </Box>

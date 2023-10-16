@@ -103,7 +103,7 @@ export default function Transactions() {
         }}
       >
         <DataGrid
-          loading={isLoading}
+          loading={isLoading || !data}
           columns={columns}
           getRowId={(row: TransactionType) => row._id}
           rows={data?.transactions || []}
