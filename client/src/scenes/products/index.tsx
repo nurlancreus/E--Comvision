@@ -1,8 +1,8 @@
 import { Box, useMediaQuery } from "@mui/material";
 
 import Header from "@/components/Header";
-import Product from "./Product";
 import Spinner from "@/components/Spinner";
+import Product from "./Product";
 
 import { useGetProductsQuery } from "@/state/api";
 
@@ -11,7 +11,7 @@ export default function Products() {
 
   const isNonMobile = useMediaQuery("(min-width: 1000px)");
 
-  if (isLoading) return <Spinner />;
+  if (!data || isLoading) return <Spinner />;
 
   return (
     <Box m="1.5rem 2.5rem">

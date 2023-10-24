@@ -1,7 +1,8 @@
 import { ResponsivePie } from "@nivo/pie";
-import { Box, CircularProgress, Typography, useTheme } from "@mui/material";
+import { Box, Typography, useTheme } from "@mui/material";
 
 import { useGetSalesQuery } from "@/state/api";
+import Spinner from "./Spinner";
 
 type BreakdownChartProps = {
   isDashboard?: boolean;
@@ -11,7 +12,7 @@ export default function BreakdownChart({ isDashboard = false }: BreakdownChartPr
   const theme = useTheme();
   const { data, isLoading } = useGetSalesQuery();
 
-  if (!data || isLoading) return <CircularProgress />;
+  if (!data || isLoading) return <Spinner />;
 
   const colors = [
     theme.palette.secondary[500],

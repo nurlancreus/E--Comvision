@@ -11,7 +11,7 @@ import {
 } from "./types";
 
 export const api = createApi({
-  baseQuery: fetchBaseQuery({ baseUrl: import.meta.env.VITE_BASE_URL }),
+  baseQuery: fetchBaseQuery({ baseUrl: import.meta.env.BASE_URL }),
   reducerPath: "adminApi",
   tagTypes: [
     "User",
